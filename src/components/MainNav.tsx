@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 /**
  * @author yeowool
@@ -8,11 +9,13 @@ import { Link } from "react-router-dom";
 
 export const MainNav = () => {
   const [isLogin, setIsLogin] = useState<boolean>(false);
+  const navigate = useNavigate();
 
   const localStorage =
     typeof window !== "undefined" ? window.localStorage : null;
 
   const accessToken = localStorage?.getItem("token") || "";
+
   useEffect(() => {
     if (accessToken) {
       setIsLogin(true);
@@ -20,6 +23,13 @@ export const MainNav = () => {
       setIsLogin(false);
     }
   }, [accessToken]);
+
+  const logOut = (e: any) => {
+    localStorage!.removeItem("token");
+    localStorage!.removeItem("user");
+    setIsLogin(false);
+    navigate("/");
+  };
 
   return (
     <nav className="flex w-full h-11 p-5 text-red-700 bg-slate-500">
@@ -31,7 +41,9 @@ export const MainNav = () => {
       ) : (
         <div className="">
           <Link to="/todolist">투두리스트</Link>
-          <button className="">로그아웃</button>
+          <button className="" onClick={logOut}>
+            로그아웃
+          </button>
         </div>
       )}
     </nav>

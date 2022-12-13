@@ -68,7 +68,7 @@ export const Login = () => {
         setEmail("");
         setPassword("");
         alert("로그인 성공🎉");
-        navigate("/todos");
+        navigate("/todolist");
       }
     } catch (err) {
       console.error(err);
