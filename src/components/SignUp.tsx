@@ -2,6 +2,11 @@ import { useState, useCallback } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
+/**
+ * @author yeowool
+ * @description 회원 정보를 성공적으로 등록하면 로그인 페이지로 이동한다.
+ **/
+
 const baseURL = process.env.REACT_APP_URL;
 
 export const SignUp = () => {

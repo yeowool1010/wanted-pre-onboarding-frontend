@@ -1,9 +1,9 @@
-import { Login } from "../components/LogIn";
+import { LogIn } from "../components/LogIn";
 
 export const LoginPage = () => {
   return (
     <>
-      <Login />
+      <LogIn />
     </>
   );
 };

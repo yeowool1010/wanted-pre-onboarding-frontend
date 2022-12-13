@@ -2,9 +2,14 @@ import { useState, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
+/**
+ * @author yeowool
+ * @description 로그인 후 localStorag에 email과 token을 저장한다.
+ **/
+
 const baseURL = process.env.REACT_APP_URL;
 
-export const Login = () => {
+export const LogIn = () => {
   const navigate = useNavigate();
 
   const [email, setEmail] = useState<string>("");

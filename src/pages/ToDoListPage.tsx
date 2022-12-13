@@ -1,7 +1,9 @@
+import { ToDoList } from "../components/ToDoList";
+
 export const ToDoListPage = () => {
   return (
     <>
-      <p>투두리스트페이지</p>
+      <ToDoList />
     </>
   );
 };
