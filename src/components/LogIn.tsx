@@ -71,7 +71,7 @@ export const Login = () => {
         navigate("/todos");
       }
     } catch (err) {
-      console.error(e);
+      console.error(err);
       alert("아이디 혹은 비밀번호를 다시 확인 해주세요 :)");
     }
   };
