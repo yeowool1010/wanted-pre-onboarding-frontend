@@ -25,7 +25,7 @@ export const MainNav = () => {
     <nav className="flex w-full h-11 p-5 text-red-700 bg-slate-500">
       {!isLogin ? (
         <div className="flex w-full h-full justify-around">
-          <Link to="/login">로그인</Link>
+          <Link to="/">로그인</Link>
           <Link to="/signup">회원가입</Link>
         </div>
       ) : (
