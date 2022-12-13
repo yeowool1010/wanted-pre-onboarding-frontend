@@ -80,7 +80,6 @@ export const SignUp = () => {
           },
         }
       );
-      console.log(JSON.stringify(response?.data.access_token));
 
       setEmail("");
       setPassword("");
@@ -96,7 +95,7 @@ export const SignUp = () => {
     <>
       <div className="signup-box">
         <form onSubmit={onSignUpSubmit}>
-          <div className="input-box formbox">
+          <div className="">
             <p>E-mail</p>
             <input
               value={email}

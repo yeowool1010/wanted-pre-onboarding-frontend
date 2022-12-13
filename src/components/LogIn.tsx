@@ -67,7 +67,7 @@ export const Login = () => {
         localStorage.setItem("user", email);
         setEmail("");
         setPassword("");
-        alert("로그인 성공!");
+        alert("로그인 성공🎉");
         navigate("/todos");
       }
     } catch (err) {
