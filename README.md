@@ -41,12 +41,12 @@
 로그인 여부에 따른 리다이렉트 처리
 <br/>
 
-✅ **Assignment4**
+ **Assignment4**
 <br/>
 to do list 작성, 조회기능
 <br/>
 
-✅ **Assignment5**
+ **Assignment5**
 <br/>
 to do list 수정, 삭제기능
 <br/>
